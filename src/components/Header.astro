@@ -1,0 +1,101 @@
+---
+
+---
+<header class="header-content">
+    <div class="header-left-content">
+        <h1 class="header-content-h1">Gérez tout votre argent dans une seule application</h1>
+        <p class="header-left-content-text">Nous vous proposons une nouvelle génération de banque mobile.
+            Économisez, dépensez et gérez votre argent depuis votre poche.</p>
+        <div class="header-image-container">
+            <img src="asset/icons/apple.svg">
+            <img src="asset/icons/android.svg">
+        </div>
+    </div>
+    <div class="image-container">
+        <img class="mobile-hidden" src="asset/images/iphone.svg">
+    </div>
+</header>
+<style>
+    .header-left-content-text {
+        margin-top: 0; /* Supprime la marge supérieure */
+        margin-bottom: 0; /* Supprime la marge inférieure */
+        width: 80vw; /* Adapte la largeur en fonction de la largeur du viewport */
+        max-width: 526px; /* Largeur maximale */
+        height: auto; /* Adapte la hauteur en fonction du contenu */
+        font-family: 'Manrope', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: calc(0.8rem + 0.5vw); /* Utilise une combinaison de rem et vw pour une taille de police responsive */
+        line-height: 160%; /* ou 29px */
+        color: #565973;
+        text-align: justify;
+    }
+
+    .header-content-h1 {
+        margin-top: 0; /* Supprime la marge supérieure */
+        margin-bottom: 0; /* Supprime la marge inférieure */
+        width: 80vw; /* Adapte la largeur en fonction de la largeur du viewport */
+        max-width: 526px; /* Largeur maximale */
+        height: auto; /* Adapte la hauteur en fonction du contenu */
+        font-family: 'Manrope', sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        font-size: calc(1.5rem + 1vw); /* Utilise une combinaison de rem et vw pour une taille de police responsive */
+        line-height: 130%; /* ou 73px */
+        color: #0B0F19;
+        text-align: left;
+    }
+
+    .header-content {
+        padding-top: 7vh;
+        position: relative;
+        min-height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .image-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .image-container > img {
+        /*max-width: 100%;*/
+        /*max-height: 50vh; !* Adapte la hauteur en fonction de la hauteur du viewport *!*/
+        /*height: auto;*/
+        /*width: auto;*/
+        /*object-fit: contain; !* Garde les proportions de l'image *!*/
+        max-width: 100%;
+        max-height: 615px;
+        height: auto;
+        width: auto;
+        object-fit: contain;
+    }
+
+    .header-left-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    .header-left-content img {
+
+    }
+
+    .header-image-container {
+        display: flex;
+        width: auto;
+        gap: 2%;
+    }
+
+    @media (max-width: 767px) {
+        /* Choisir une largeur d'écran appropriée pour déterminer quand l'image doit être masquée */
+        .mobile-hidden {
+            display: none;
+        }
+    }
+</style>
